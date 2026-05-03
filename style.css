@@ -1,0 +1,184 @@
+:root {
+    --navy: #1a3a5f;
+    --orange: #f39c12;
+    --light-bg: #f8f9fa;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    
+    /* Memasang gambar background */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('gallery.jpg');
+    
+    /* Pengaturan agar gambar rapi */
+    background-position: center;     /* Gambar selalu di tengah */
+    background-repeat: no-repeat;    /* Gambar tidak mengulang */
+    background-size: cover;          /* Gambar menutupi seluruh layar */
+    background-attachment: fixed;    /* Background tidak ikut bergerak saat di-scroll */
+}
+/* Navbar */
+.navbar {
+    background: var(--navy);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0; z-index: 1000;
+}
+
+.logo { font-weight: bold; font-size: 1.2rem; }
+.logo span { color: var(--orange); }
+
+.search-bar input {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    width: 250px;
+}
+
+/* Hero Banner */
+.hero-banner {
+    margin: 15px;
+    height: 200px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/800/400?sunset');
+    background-size: cover;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.btn-primary {
+    background: var(--orange);
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Grids */
+.section { padding: 10px 20px; }
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.cat-item {
+    background: var(--navy);
+    color: white;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 5px;
+}
+
+.artwork-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.art-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.art-card img { width: 100%; height: 120px; object-fit: cover; }
+.art-info { padding: 10px; }
+.art-info h4 { margin: 0; font-size: 0.9rem; }
+.art-info p { font-size: 0.7rem; color: gray; margin: 5px 0; }
+
+.price-rating {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/* Bottom Nav */
+.bottom-nav {
+    position: fixed;
+    bottom: 0; width: 100%;
+    background: var(--navy);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    color: white;
+    font-size: 0.6rem;
+    text-align: center;
+    .bottom-nav a {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Memastikan seluruh area menu bisa diklik */
+}
+}
+
+.nav-item.active { color: var(--orange); }
+
+/* Container Scroll Horizontal */
+.artist-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px 0;
+    scrollbar-width: none; /* Sembunyikan scrollbar di Firefox */
+}
+
+.artist-scroll::-webkit-scrollbar {
+    display: none; /* Sembunyikan scrollbar di Chrome/Safari */
+}
+
+/* Bingkai Foto Seniman */
+.artist-card {
+    min-width: 140px; /* Lebar setiap kartu seniman */
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.artist-photo {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    border-radius: 50%; /* Membuat foto lingkaran */
+    overflow: hidden;
+    border: 2px solid var(--orange); /* Bingkai warna orange sesuai tema */
+}
+
+.artist-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.artist-info h4 {
+    margin: 5px 0;
+    font-size: 0.85rem;
+    color: var(--navy);
+    white-space: nowrap;
+}
+
+.badge {
+    background: #fff3e0;
+    color: var(--orange);
+    font-size: 0.65rem;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
