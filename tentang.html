@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Galeri Karya</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #001f3f;
+            --gold: #FFD700;
+            --white: #ffffff;
+            --light-gray: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: var(--white);
+            color: #333;
+        }
+
+        /* Hero Section dengan Background gallery.JPG */
+        .about-hero {
+            background: linear-gradient(rgba(0, 31, 63, 0.7), rgba(0, 31, 63, 0.7)), url('gallery.JPG');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            padding: 0 20px;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 20px 100px;
+        }
+
+        .intro-section {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .intro-section h2 {
+            color: var(--navy);
+            font-size: 2rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .intro-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--gold);
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .text-block p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* Values & Mission */
+        .values-section {
+            background-color: var(--light-gray);
+            padding: 60px 20px;
+            border-radius: 15px;
+            margin-top: 40px;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .value-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .value-card h4 {
+            color: var(--navy);
+            margin-bottom: 15px;
+            border-left: 4px solid var(--gold);
+            padding-left: 10px;
+        }
+
+        /* Call to Action */
+        .cta-section {
+            text-align: center;
+            margin-top: 80px;
+            padding: 40px;
+            border: 2px dashed var(--navy);
+            border-radius: 15px;
+        }
+
+        .btn-join {
+            background-color: var(--navy);
+            color: var(--gold);
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .btn-join:hover {
+            background-color: var(--gold);
+            color: var(--navy);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .content-grid { grid-template-columns: 1fr; }
+            .hero-text h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="about-hero">
+        <div class="hero-text">
+            <h1> <span style="color: var(--gold);">"Seni tidak pernah selesai, hanya ditinggalkan."</span></h1>
+            <p>-Leonardo DaVinci-</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="intro-section">
+            <h2>Filosofi Kami</h2>
+            <div class="content-grid">
+                <div class="text-block">
+                    <p>
+                        Berawal dari kecintaan terhadap keindahan visual dan kebutuhan akan platform yang mampu menjembatani seniman lokal dengan audiens global, <strong>Galeri Karya</strong> lahir sebagai sebuah oase digital. Kami percaya bahwa seni tidak seharusnya terkurung dalam dinding beton saja.
+                    </p>
+                    <p>
+                        Melalui teknologi web modern, kami menghadirkan pengalaman eksplorasi karya yang imersif. Setiap sapuan kuas pada lukisan abstrak, setiap sudut pada pahatan patung, hingga detail cahaya pada fotografi, kami sajikan dengan kualitas visual terbaik untuk menjaga integritas artistik dari sang kreator.
+                    </p>
+                </div>Kena
+                <div class="text-block">
+                    <p>
+                        Fokus utama kami adalah memberikan ruang bagi seniman-seniman berbakat—seperti Anita Kusuma dan Bayu Santoso—untuk menceritakan visi mereka melalui karya. Kami tidak hanya sekadar menampilkan gambar, namun membangun ekosistem apresiasi seni yang sehat dan berkelanjutan.
+                    </p>
+                    <p>
+                        Dengan palet warna Navy dan Gold, kami merepresentasikan profesionalisme sekaligus kemewahan seni yang abadi, memastikan bahwa setiap interaksi Anda di platform ini terasa eksklusif dan bermakna.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="values-section">
+            <h3 style="text-align: center; color: var(--navy);">Apa Tujuan Kami?</h3>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h4>Wadah Apresiasi Seni Digital Tanpa Batas</h4>
+                    <p>Website ini bertujuan untuk membawa atmosfer galeri fisik ke dalam genggaman layar, sehingga pengguna dapat mengeksplorasi karya seni kapan saja dan di mana saja tanpa batasan geografis.</p>
+                </div>
+                <div class="value-card">
+                    <h4>Pemberdayaan Seniman</h4>
+                    <p>Kami memberikan statistik penayangan dan interaksi secara transparan kepada seniman untuk membantu mereka memahami pasar seni digital.</p>
+                </div>
+                <div class="value-card">
+                    <h4>Meningkatkan Efisiensi Interaksi antara Kolektor dan Kreator</h4>
+                    <p>Melalui fitur seperti profil seniman dan statistik penayangan yang transparan, website bertujuan untuk memfasilitasi proses kurasi dan apresiasi karya secara lebih profesional dan modern.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h3>Punya Karya yang Ingin Dipamerkan?</h3>
+            <p>Bergabunglah dengan komunitas kami dan jadilah bagian dari perjalanan seni digital masa depan.</p>
+            <button class="btn-join">DAFTAR SEBAGAI SENIMAN</button>
+        </section>
+    </div>
+
+    <footer class="bottom-nav">
+        <a href="index.html" class="nav-item" style="text-decoration: none; color: inherit;">🏠<br>BERANDA</a>
+        <a href="#" class="nav-item" style="text-decoration: none; color: inherit;">🔍<br>JELAJAH</a>
+        <a href="#" class="nav-item" style="text-decoration: none; color: inherit;">❤️<br>KOLEKSI</a>
+        <a href="tentang.html" class="nav-item active" style="text-decoration: none; color: inherit;">ℹ️<br>TENTANG</a>
+        <a href="profil.html" class="nav-item" style="text-decoration: none; color: inherit;">👤<br>PROFIL</a>
+    </footer>
+
+</body>
+</html>
